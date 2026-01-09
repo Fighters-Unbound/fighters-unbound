@@ -524,5 +524,5 @@ This is a private project. For issues or questions, please contact the developme
 
 ---
 
-**Note**: This platform stores all fighter data off-chain. The on-chain NFT contract's `tokenURI` should point to `https://api.unbound.games/fighter-metadata/{tokenId}` for proper marketplace integration.
+**Note**: This platform stores all fighter data off-chain. The on-chain NFT contract's `tokenURI` should point to `https://api.unbound.games/metadata/{tokenId}` for proper marketplace integration.
 
