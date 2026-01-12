@@ -40,10 +40,10 @@ The platform uses a **microservices architecture** with three main components:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│              Frontend (React/Next.js)                        │
-│  - User Interface                                            │
-│  - Wallet Connectivity (RainbowKit/wagmi)                    │
-│  - Share Card Generation                                     │
+│              Frontend (React/Next.js)                       │
+│  - User Interface                                           │
+│  - Wallet Connectivity (RainbowKit/wagmi)                   │
+│  - Share Card Generation                                    │
 └──────────────────────┬──────────────────────────────────────┘
                        │ HTTP/REST API
 ┌──────────────────────▼──────────────────────────────────────┐
@@ -59,12 +59,12 @@ The platform uses a **microservices architecture** with three main components:
 │  - LangGraph Workflow Orchestration                         │
 │  - Recommendation Generation                                │
 │  - Training Analysis                                        │
-│  - Natural Language Generation (Ollama)                      │
-└────┬──────────────┬──────────────┬──────────────────────────┘
-     │              │              │
-┌─────▼──────┐ ┌────▼──────┐ ┌────▼──────────┐
-│  SQLite    │ │ ChromaDB   │ │   Ollama LLM  │
-│  (Structured│ │ (Vector)   │ │  (Generation)│
+│  - Natural Language Generation (Ollama)                     │
+└─────┬─────────────┬──────────────┬──────────────────────────┘
+      │             │              │
+┌─────▼──────┐ ┌────▼────────┐ ┌───▼──────────┐
+│  SQLite    │ │  ChromaDB   │ │  Ollama LLM  │
+│ (Structured│ │  (Vector)   │ │  (Generation)│
 │   Data)    │ │  - Actions  │ │              │
 │            │ │  - Analysis │ │              │
 │            │ │  - Knowledge│ │              │
@@ -81,99 +81,62 @@ unbound/
 └── README.md                          # This file
 ```
 
-## 🚀 Getting Started
+## 📍 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗦𝘁𝗮𝘁𝘂𝘀
 
-### Prerequisites
+- Fighters Unbound is live and actively used by a growing core community.
 
-- **Node.js** v16 or higher
-- **Python** 3.8 or higher
-- **npm** or **yarn**
-- **Strava API credentials** (optional, for running integration)
-- **Ollama** (for AI coach - see trainer agent setup)
+- Based on current wallet and training data:
 
-### 1. Frontend Setup
+- 𝟳𝟯 𝘂𝗻𝗶𝗾𝘂𝗲 𝘄𝗮𝗹𝗹𝗲𝘁 𝗮𝗱𝗱𝗿𝗲𝘀𝘀𝗲𝘀 have participated
 
-```bash
-cd squad-unbound-games-frontend
+- 𝟭𝟰,𝟬𝟬𝟬+ 𝗸𝗶𝗹𝗼𝗺𝗲𝘁𝗲𝗿𝘀 𝗹𝗼𝗴𝗴𝗲𝗱 through real-world running activities
 
-# Install dependencies
-npm install
+- 𝟭𝟮𝟬+ 𝘆𝗼𝗴𝗮 𝘀𝗲𝘀𝘀𝗶𝗼𝗻𝘀 completed
 
-# Configure environment variables
-# Create .env.local file:
-NEXT_PUBLIC_API_BASE_URL=http://localhost:3001
-NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id  # Optional but recommended
-NEXT_PUBLIC_SHAPE_CHAIN_ID=360
-NEXT_PUBLIC_SHAPE_RPC_URL=https://mainnet.shape.network
+- 𝟭𝟯𝟬+ 𝗺𝗲𝗱𝗶𝘁𝗮𝘁𝗶𝗼𝗻 𝘀𝗲𝘀𝘀𝗶𝗼𝗻𝘀 completed
 
-# Run development server
-npm run dev
-```
+Engagement ranges from high-volume runners with over 𝟮,𝟬𝟬𝟬 𝗸𝗺 logged to users focusing entirely on meditation or yoga.
+All activities are consistently reflected in fighter progression, training history, and dynamic NFT metadata.
 
-The frontend will be available at `http://localhost:3000`
+## 🧭 𝗪𝗵𝘆 𝗜𝘁 𝗠𝗮𝘁𝘁𝗲𝗿𝘀
 
-### 2. Backend Setup
+Fighters Unbound is built around two core ideas: 𝗿𝗲𝗳𝗹𝗲𝗰𝘁𝗶𝗼𝗻 and 𝗺𝗼𝘁𝗶𝘃𝗮𝘁𝗶𝗼𝗻.
 
-```bash
-cd squad-unbound-games-backend
+### 𝗔 𝗠𝗶𝗿𝗿𝗼𝗿
+- Each fighter mirrors real-world behavior.
 
-# Install dependencies
-npm install
+- Movement, focus, and consistency are transformed into visible, persistent progress.
 
-# Configure environment variables
-# Create .env file:
-PORT=3001
-NODE_ENV=development
-STRAVA_CLIENT_ID=your_client_id
-STRAVA_CLIENT_SECRET=your_client_secret
-DATABASE_PATH=./src/database/mydb-backup-2025-12-03_09-45-50.sqlite
+- Effort becomes something tangible — owned, tracked, and remembered.
 
-# Run development server
-npm run dev
-```
+### 𝗔 𝗠𝗼𝘁𝗶𝘃𝗮𝘁𝗼𝗿
+- Progress is earned through real action, not simulated inputs.
 
-The backend API will be available at `http://localhost:3001`
+- Knowing that daily activity shapes a lasting digital character creates accountability and long-term motivation without artificial pressure or exploitative gamification.
 
-**Note**: The database is pre-populated with 5,200 fighters. Do NOT run `npm run init-db` as it will overwrite existing data.
+### 𝗔 𝗗𝗲𝗰𝗲𝗻𝘁𝗿𝗮𝗹𝗶𝘇𝗲𝗱 𝗧𝗿𝗮𝗶𝗻𝗶𝗻𝗴 𝗟𝗮𝘆𝗲𝗿
+- Fighters Unbound acts as an open training layer:
 
-### 3. AI Trainer Agent Setup
+- Activities can originate from multiple sources
 
-```bash
-cd squad-unbound-games-trainer-agent
+- Progress is not locked to a single app or provider
 
-# Create virtual environment
-python -m venv venv
+- Training history remains portable and extensible
 
-# Activate virtual environment
-# On Windows:
-venv\Scripts\activate
-# On Linux/Mac:
-source venv/bin/activate
 
-# Install dependencies
-pip install -r requirements.txt
+This enables a decentralized approach to training and self-development.
 
-# Install and run Ollama (for AI generation)
-# Visit https://ollama.ai to download Ollama
-# Then pull the model:
-ollama pull gemma:7b
+## 𝗢𝗿𝗴𝗮𝗻𝗶𝘇𝗮𝘁𝗶𝗼𝗻𝘀 & 𝗖𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝗶𝗲𝘀
+- Beyond individual use, the system can serve groups and organizations:
 
-# Configure environment variables
-# Create .env file:
-BACKEND_DB_PATH=../squad-unbound-games-backend/src/database/mydb-backup-2025-12-03_09-45-50.sqlite
-VECTOR_DB_DIR=./data/vector_db
-OLLAMA_MODEL=gemma:7b
-OLLAMA_BASE_URL=http://localhost:11434
-PORT=8000
+- Aggregate, privacy-aware tracking of member activity
 
-# Initialize vector databases
-python init_db.py
+- Incentives through NFTs, access rights, reputation, or off-chain rewards
 
-# Run the server
-python main.py
-```
+- Shared goals without centralized surveillance or control
 
-The trainer agent will be available at `http://localhost:8000`
+
+Instead of extracting value from user data, Fighters Unbound returns value by turning activity into ownership and progression.
 
 ## 🎮 How to Use
 
